@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        fieldset{
+            margin: 30px;
+        }
+        legend {
+            color: purple;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            padding: 5px 50px;
+        }
+
+        label span {
+            font-weight: bold;
+            float: left;
+            width: 80px;
+        }
+
+        input[type="number"] {
+            width: 50px;
+        }
+
+        .div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">상품 주문서</h1>
+    <div>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <label><span>이름</span><input type="text" placeholder="여백없이 입력"></label>
+            <label><span>연락처</span><input type="tel" placeholder="연락 가능한 번호"></label>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <label><span>주소</span><input type="text"></label>
+            <label><span>전화번호</span><input type="tel"></label>
+            <label><span>메모</span><textarea cols="30" rows="3"></textarea></label>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>주문 정보</legend>
+            <label>
+                <p><input type="checkbox"> 안티구아 (100g)<input type="number" min="0">개</p>
+            </label>
+            <label>
+                <p><input type="checkbox">인도네시아 만델링 (100g)<input type="number" min="0">개</p>
+            </label>
+            <label>
+                <p><input type="checkbox">탐라는도다 (블렌딩) (100g)<input type="number" min="0">개</p>
+            </label>
+        </fieldset>
+    </div>
+    <div class="div">
+        <input type="submit" value="주문하기">
+        <input type="reset" value="다시 작성">
+    </div>
+
+</body>
+
+</html>

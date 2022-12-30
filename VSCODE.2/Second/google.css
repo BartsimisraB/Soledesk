@@ -1,0 +1,73 @@
+
+.top{
+    text-align: right;
+    padding: 10px;
+}
+#menu{
+    font-size: small;
+    padding: 15px;
+}
+#login{
+    font-size: small;
+    margin: 5px;
+    background-color: teal;
+    color: white;
+}
+#mid{
+    margin-top: 100px;
+    font-size: 150px;
+    text-align: center;
+    background-color: pink;
+    border-radius: 30px;
+}
+#g,#o,#o1,#g1,#l,#e{
+    font-family: 'Times New Roman', Times, serif;
+}
+#g{
+    color: rgb(38, 96, 245);
+}
+#g1{
+    color: rgb(38, 96, 245);
+}
+#o{
+    color: rgb(202, 67, 67);
+}
+#o1{
+    color: rgb(232, 223, 49);
+}
+#l{
+    color: rgb(144, 248, 46);
+}
+#e{
+    color: rgb(202, 67, 67);
+}
+
+#ss{
+    width: 600px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+#search{
+    text-align: center;
+}
+
+#ll{
+    padding: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+    color:gray;
+    border:0px solid whitesmoke;
+    border-radius: 5px;
+}
+#lll{
+    padding: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+    color:gray;
+    border:0px solid whitesmoke;
+    border-radius: 5px;
+    margin-left: 10px;
+}

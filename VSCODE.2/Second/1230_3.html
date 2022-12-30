@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <style>
+        input[type=text] {
+            color: red;
+        }
+
+        input:hover {
+            background-color: pink;
+        }
+
+        label {
+            display: block;
+            padding: 10px;
+        }
+        label span{
+            float: left;
+            width: 80px;
+            padding: 10px
+        }
+        input[type=text]:focus{
+            font-size: 120%;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label><span>Name</span><input type="text" placeholder="Sinyo"><br></label>
+        <label><span>Email</span><input type="email" placeholder="Sinyo@naver.com"><br></label>
+        <label><span>Msg</span>
+            <textarea placeholder="메시지를 남겨줘"></textarea>
+            <label><span></span><input type="submit" value="제출"><br></label>
+    </form>
+
+</body>
+
+</html>
