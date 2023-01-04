@@ -1,0 +1,140 @@
+/* 로고=================================== */
+.logo {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    width: 450px;
+    height: 80px;
+    margin-top: 10px;
+    padding: 10px 20px 20px 100px;
+}
+
+.logo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: rgb(54, 75, 175);
+}
+
+/* 설문조사 ~~ ========================= */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 20%;
+}
+
+.category:hover {
+    cursor: pointer;
+}
+
+.category {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 38px;
+    padding-top: 10px;
+}
+
+.category {
+    border: 1px solid #d4d4d4;
+    background-color: #efefef;
+    box-shadow: 0.5px 0.5px 0px #d3d3d3;
+    float: left;
+    width: 29%;
+    height: 70px;
+    margin: 2%;
+}
+
+/* 공지사항 설문조사========================= */
+.notice em,
+.notice2 em {
+    cursor: default;
+    color: tomato;
+    float: right;
+}
+
+.notice ul li,
+.notice ul {
+    padding-top: 5px;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+}
+
+.notice-name em {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+.notice {
+    float: left;
+    width: 36%;
+    max-width: 800px;
+    min-width: 400px;
+    margin: 4%;
+    padding: 30px;
+}
+
+.notice2 {
+    float: left;
+    width: 36%;
+    max-width: 800px;
+    min-width: 400px;
+    margin: 4%;
+    padding: 30px;
+}
+
+.notice-name {
+    font-size: 1.4em;
+    color: #111;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.file {
+    border-bottom: 1px dashed #ddd;
+    padding: 5px;
+}
+
+.file:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rebeccapurple;
+}
+
+/* 하단 내용 */
+.bottom {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 2px;
+    margin: 0px -7px;
+}
+
+.bottom sapn {
+    font-weight: bolder;
+}
+
+.bottom div {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #aaaaaa;
+    align-items: center;
+    margin:0 11%;
+    padding: 20px;
+}
+
+#self,
+#mail {
+    color: #eee;
+    font-weight: bolder;
+    cursor: pointer;
+}
