@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function star(n) {
+            var num = parseInt(n);
+            for (var i = 0; i < num; i++) {
+                for (var j = 0; j < i + 1; j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <script>
+        star(5);
+
+        var password = "password";
+        while (true) {
+            var input = prompt("문자 입력");
+            if (input == "password") {
+                alert("통과");
+                break;
+            }
+        }
+
+        var num = prompt('수식 입력');
+
+        document.write(eval(num));
+    </script>
+</body>
+
+</html>

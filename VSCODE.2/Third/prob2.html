@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function ra() {
+            return Math.floor(Math.random() * 9 + 1);   //1 ~ 9 까지 정수만
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var n = ra() + " * " + ra();
+        var n1 = prompt(n + "은?");
+
+        if(n1 == null){
+            document.write("종료");
+        }
+        else{
+            var r = eval(n);
+            if(r == n1) {
+                document.write("정답");
+            }
+            else{
+                document.write("땡");
+            }
+        }
+    </script>
+    
+</body>
+</html>
