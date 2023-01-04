@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function mon(name, id, n) {
+            this.name = name;
+            this.id = id;
+            this.n = n;
+            
+            this.a = function(){
+                return this.n;
+            }
+            
+            this.plus = function(money) {
+                this.n += money;
+            }
+
+            this.minus = function(money) {
+                this.n -= money;
+            }
+        
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var a = new mon("종진","123",30000);
+        document.write(a.name + "<br>");
+
+        a.plus(10000);
+        document.write(a.a() + "<br>");
+
+        a.minus(10000);
+        document.write(a.a() + "<br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+
+
+    </script>
+</head>
+
+<body>
+    <p p id="firstP" style="color:blue" onclick="this.style.color='teal'">
+        이것은
+        <span style="color:red">
+            문장입니다.
+        </span>
+    </p>
+    <script>
+        var n = document.getElementById("firstP"); //id가 firstP인 태그의 DOM을 찾는다.
+        var m = n.tagName + "\n";
+
+        m += n.id;
+        alert(m);
+
+        m += n.innerHTML;
+        alert(m);
+
+        m += n.style.color;
+        alert(m);
+
+        m += n.childElementCount;
+        alert(m);
+    </script>
+</body>
+
+</html>

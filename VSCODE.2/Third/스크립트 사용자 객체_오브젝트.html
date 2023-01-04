@@ -3,7 +3,17 @@
 
 <head>
     <script>
+        var mon = new Object(); //사용자 객체
+        //필드 변수
+        mon.name = "김길동";
+        mon.id = "123";
+        mon.num = 30000;
 
+        //function
+        mon.a = a;
+        mon.plus = plus;
+        mon.minus = minus;
+        
         function a() {
             return this.num;
         }
@@ -15,17 +25,8 @@
         function minus(money) {
             this.num -= money;
         }
-        var mon = new Object(); //사용자 객체
-        //필드 변수
-        mon.name = "김길동";
-        mon.id = "123";
-        mon.num = 30000;
 
 
-        //function
-        mon.a = a;
-        mon.plus = plus;
-        mon.minus = minus;
     </script>
 </head>
 

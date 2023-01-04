@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+
+
+    </script>
+</head>
+
+<body>
+    <!-- <script>
+        function ch() {
+            var n = document.getElementById("java");
+            n.style.color ="black";
+            n.style.border = "3px solid deeppink";
+            n.style.fontSize = "30px";
+            n.style.display = "block";
+        
+        }
+    </script>
+
+    <p style="color: coral">자바
+        <span id="java" style="color: green;">
+            스크립트</span>
+    </p>
+    <input type="button" value="버튼" onclick="ch()"> -->
+
+    <!-- <script>
+        function ch() {
+            var pp = document.getElementById("icon");
+            var pic = pp.innerHTML = "크롱 <img src='C:/Users/11027/크롱.jpg'> 크롱";
+            alert(pic);
+
+
+        }
+
+    </script>
+
+    <p id="icon" style="color: blue;" onclick="ch()">
+    클릭 <sapn style="color: red;">해보세요</sapn></p> -->
+
+    <script>
+        function ch(){
+            var n = document.getElementsByTagName("span");
+            
+            for(var i = 0; i < n.length; i++) {
+                var num = n[i];
+                num.style.color = "tomato";
+                num.style.fontSize = "30px";
+            }
+        }
+    </script>
+
+    <button onclick="ch()">눌러!!</button>
+    이 노래는 <span>유명</span>해지지 않았으면 해
+    이 노래는 유명해지지 않았으면 해
+    사람들이 <span>가사를 못 외웠으면 해</span>
+    에라라라라 에베베베 에베베베
+    이 <span>노래는</span> 유명해지지 않았으면 해
+    이 노래는 유명해지지 않았으면 해
+
+</body>
+
+
+</html>
