@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function show(n) {
+            document.write(n + "<br>");
+        }
+
+    </script>
+</head>
+
+<body>
+    <script>
+        var ary = [10, 20, 30, 40, 50]; //인덱스로 생성
+
+        for (var i = 0; i < 5; i++) {
+            var n = ary[i];
+            while (n > 0) {
+                document.write("@");
+                n--;
+            }
+            document.write(ary[i] + "<br>")
+        }
+        //=========================================
+        var a = new Array(); //공백으로 배열 생성
+
+        a[0] = 1.1;
+        a[1] = 2.2;
+        a[2] = 3.3;
+
+        var sum = 0;
+        for (var i = 0; i < a.length; i++) {
+            sum += [i];
+        }
+        document.write(sum / a.length +"<br>");
+        //=========================================
+        var ary1 = new Array("현오", "형민", "종진");
+        var ary2 = new Array("건용");
+        var n;
+
+        n = ary1.concat(ary2);  //현오,형민,종진,건용 - 두 배열 합치기
+        show(n);
+
+        n = ary1.join("@@");    //현오@@형민@@종진 - 인덱스 사이에 @@ 삽입
+        show(n);
+
+        n = ary1.slice(1,2);    //형민 - 인덱스 1이상 2미만
+        show(n);
+
+        n = ary1.sort();    //종진,현오,형민 - 배열 정렬
+        show(n);
+
+        n = ary1.reverse(); //형민,현오,종진 - 배열 인덱스 역순으로 정렬
+        show(n);
+        
+        n = ary1.toString();    //형민,현오,종진 - 문자열으로 변환
+        show(n);
+
+
+
+    </script>
+</body>
+
+</html>
