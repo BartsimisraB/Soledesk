@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+    </script>
+</head>
+
+<body>
+
+    <ul id="list"><input type="button" onclick="food()" value="음식 출력">
+
+    </ul>
+
+    <script>
+        function food() {
+            var a = document.getElementById("list");
+            var food = ["라면", "초밥", "가츠동", "사케동"];
+            
+            for (var i = 0; i < food.length; i++) {
+                item = document.createElement("li");
+                item.innerHTML = food[i];
+                a.appendChild(item);
+            }
+        }
+    </script>
+</body>
+
+</html>

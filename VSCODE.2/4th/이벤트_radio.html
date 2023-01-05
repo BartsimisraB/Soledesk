@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function on() {
+            var n = null;
+            var c = document.getElementsByName("city");
+            for (var i = 0; i < c.length; i++) {
+                if (c[i].checked == true) {  //체크박스에서 사용 가능한 checked
+                    n = c[i];
+                }
+            }
+            if (n != null) {
+                alert(n.value); //radio 타입의 value 값을 팝업창으로 띄운다
+            }
+            else {
+                alert("아무 도시나 선택해");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="radio" name="city" value="seoul">서울
+        <input type="radio" name="city" value="busan">부산
+        <input type="radio" name="city" value="chunchen">춘천
+        <input type="button" value="체크" onclick="on()">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function dept() {
+            var n = document.getElementById("p1");
+            var m = document.createElement("p")
+
+            m.innerHTML = "서버";
+
+            m.onclick = function () {
+                var p = n.parentElements;
+                p.removeChild(n);
+            }
+
+            n.appendChild(m);
+        }
+
+        function food() {
+            var n = document.getElementById("p2");
+            var m = document.createElement("p")
+
+            m.innerHTML = "짜장면";
+
+            m.onclick = function () {
+                var p = n.parentElements;
+                p.removeChild(n);
+            }
+
+            n.appendChild(m);
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <h2>Q. 컴퓨터 분야 뭐가 관심있니?</h2>
+        <input type="button" value="답보기" onclick="dept()">
+        <p id="p1"></p>
+    </div>
+    <div>
+        <h2>Q. 뭐가 먹고싶니?</h2>
+        <input type="button" value="답보기" onclick="food()">
+        <p id="p2"></p>
+    </div>
+</body>
+
+</html>

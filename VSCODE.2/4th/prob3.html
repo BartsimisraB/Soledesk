@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function gugu(n) {
+            var m = parseInt(n);
+            if (isNaN(m) || m < 1 || m > 9) {
+                alert("잘못 입력");
+                return;
+            }
+            else {
+                document.write("========================<br>");
+                document.write(n + "단<br>");
+                for (var j = 1; j <= 9; j++) {
+                    document.write(n + "x" + j + "=" + n * j + "<br>");
+                }
+                document.write("========================<br>");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var input = prompt("숫자 입력");
+        gugu(input);
+    </script>
+</body>
+
+</html>

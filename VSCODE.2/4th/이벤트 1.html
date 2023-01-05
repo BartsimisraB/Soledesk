@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    function init(){
+      p=document.getElementById("p");
+      p.onmouseover = over;  //over함수를 onmouseover리스너로 등록
+      p.onmouseout= out;
+    }
+    function over(){
+      p.style.backgroundColor="pink";
+    }
+    function out(){
+      p.style.backgroundColor="white";
+    }
+
+
+  </script>
+</head>
+<body onload="init()">  <!--문서가 완전히 로드 되었을 때 호출-->
+  <p id="p">색 변경</p>
+
+  <script>
+
+  </script>
+
+</body>
+</html>

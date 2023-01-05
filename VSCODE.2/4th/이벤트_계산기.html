@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function cal() {
+            var input = document.getElementById("a");
+            var ans = document.getElementById("b");
+
+            ans.value = eval(input.value);
+        }
+    </script>
+
+</head>
+
+<body>
+    식 <input type="text" id="a"><br>
+    답 <input type="tel" id="b">
+    <input type="button" value="계산" onclick="cal()">
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function ch(obj) {  //obj = input 타입
+            if(obj.value=="") {
+                alert("이름 입력해!");
+                obj.focus();    //obj에 다시 포커스 맞춤
+            }
+        }
+    </script>
+</head>
+<body>
+
+    이름 <input type="text" id="a" onblur="ch(this)"><br>
+    전화번호 <input type="text">
+    
+</body>
+</html>

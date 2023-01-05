@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <head>
+    <script>
+        function calc(id) {
+            var b1 = document.getElementById("cal1");
+            var b2 = document.getElementById("cal2");
+            var b3 = document.getElementById("cal3");
+
+            var num = id.innerText;
+            var index = num.indexOf("=");
+            var answer = eval(num.slice(0,index - 1));
+
+            b1.innerText = answer;
+            b2.innerText = answer;
+            b3.innerText = answer;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2>계산해봅시다.</h2>
+    <hr>
+    <div><span id="mod">3 + 5 =</span><span id="cal1" onclick="calc(mod)">답</span></div>
+    <div><span id="mod2">5 * 20 + 60 =</span><span id="cal2" onclick="calc(mod2)">답</span></div>
+    <div><span id="mod3">20 / 5 - 4 * 5 =</span><span id="cal3" onclick="calc(mod3)">답</span></div>
+
+
+</body> -->
+
+<head>
+    <script>
+        function result(r) {
+            var pa = r.parentElement.innerText;
+            var index = pa.indexOf("=");
+
+            r.innerText = eval(pa.slice(0, index - 1));
+        }
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li>3 + 4 = <label onclick="result(this)">답</label></li>
+        <li>5 * 20 + 60 = <label onclick="result(this)">답</label></li>
+        <li>20 / 5 - 4 * 5 = <label onclick="result(this)">답</label></li>
+    </ul>
+</body>
+
+</html>
