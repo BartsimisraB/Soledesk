@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #dis {
+            display: inline-block;
+            width: 500px;
+            margin-left: 9px;
+        }
+
+        button {
+            width: 115px;
+            height: 30px;
+            margin: 6px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <h2>계산기</h2>
+    <hr>
+    <input type="text" value="0" id="dis">
+    <table>
+        <tr>
+            <td><button onclick="clearf()">C</button></td>
+            <td><button onclick="re()">=</button></td>
+        </tr>
+
+        <tr>
+            <td><button name="num" value="7">7</button></td>
+            <td><button name="num" value="8">8</button></td>
+            <td><button name="num" value="9">9</button></td>
+            <td><button name="op" value="/">/</button></td>
+        </tr>
+
+        <tr>
+            <td><button name="num" value="4">4</button></td>
+            <td><button name="num" value="5">5</button></td>
+            <td><button name="num" value="6">6</button></td>
+            <td><button name="op" value="*">*</button></td>
+        </tr>
+
+        <tr>
+            <td><button name="num" value="1">1</button></td>
+            <td><button name="num" value="2">2</button></td>
+            <td><button name="num" value="3">3</button></td>
+            <td><button name="op" value="-">-</button></td>
+        </tr>
+
+        <tr>
+            <td><button name="num" value="0">0</button></td>
+            <td><button name="op" value="+">+</button></td>
+        </tr>
+    </table>
+    <!-- 스크립트는 바디의 최하단에 작성하는 것이 좋다. -->
+    <script>
+        var num = document.getElementsByName("num");
+        var mod = document.getElementsByName("op");
+        var disp = document.getElementById("dis");
+        var sum = 0;
+
+        for (var i = 0; i < num.length; i++) {
+            num[i].addEventListener("click", function () {
+                var c = parseInt(this.value);
+                disp.value = c;
+                sum += c;
+            });
+        }
+
+        for (var i = 0; i < mod.length; i++) {
+            mod[i].addEventListener("click", function () {
+                var d = this.innerHTML;
+                sum += d;
+            });
+        }
+
+        function clearf() {
+            disp.value = 0;
+            sum = 0;
+        }
+
+        function re() {
+            disp.value = eval(sum);
+        }
+    </script>
+</body>
+
+</html>

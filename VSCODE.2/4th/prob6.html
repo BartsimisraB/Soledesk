@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function double(){
+            var a = document.getElementById("body");
+            a.style.backgroundColor ="pink";
+        }
+        function change() {
+            var a = document.getElementById("body");
+            a.style.backgroundColor = "blue";
+        }
+    </script>
+</head>
+<body id="body">
+    <!-- 1. “색 이벤트” 라는 문자열에 더블클릭하면 배경색을 pink, 
+    마우스 커서가 객체 영역에서 벗어나면 배경색을 blue로 설정해라. -->
+    <div ondblclick="double()" onmouseout="change()">색 이벤트</div>
+
+
+</body>
+</html>

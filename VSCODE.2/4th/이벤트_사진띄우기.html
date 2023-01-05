@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function on() {
+            var n = document.getElementById("aa");
+            var m = document.getElementById("bb");
+
+            var b = n.selectedIndex;
+            m.src = n.options[b].value;
+        }
+    </script>
+</head>
+<body>
+    <select id="aa" onchange="on()">
+        <option value="C:/Users/11027/크롱.jpg">크롱</option>
+        <option value="C:/Users/11027/뽀로로.jpg">뽀로로</option>
+    </select>
+
+    <span id="span">캐릭터!</span>
+    <p><img id="bb" src="C:/Users/11027/뽀로로.jpg"></p>
+</body>
+</html>
