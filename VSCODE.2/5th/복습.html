@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    식 <input type="text" id="cal"><br>
+    답 <input type="text" id="ans"><br>
+    <input type="button" value="계산" onclick="calcu()">
+
+    <script>
+        function calcu() {
+            var input = document.getElementById("cal");
+            var ans = document.getElementById("ans");
+
+            ans.value = eval(input.value);
+        }
+    </script>
+</body>
+</html>
+
+<!-- 
+<body>
+    <p onclick="ch()">뭐 먹고 싶니?</p>
+    <p id="w"></p>
+    <script>
+        function ch() {
+            var a = prompt("음식 입력");
+            var b = document.getElementById("w");
+
+            b.innerHTML = a;
+        }
+    </script>
+</body> -->
+
+<!-- <body>
+    <ul>
+        <li>데이터베이스</li>
+        <li>빅데이터</li>
+        <li>웹스래핑</li>
+        <li>스프링</li>
+    </ul>
+    <script>
+        var d = document.getElementsByTagName("li");
+        for(var p of d) {   //java의 for-each구문과 비슷한 역할
+            p.addEventListener("click",function() {
+                this.style.fontSize = "1.2em";
+            });
+        }
+    </script>
+</body> -->
+
+<!-- <body>
+    <div>자바스크립트</div>
+    <script>
+        var g = document.getElementsByTagName("div")[0];
+        g.addEventListener("mouseover", function() {
+            this.style.color = "skyblue";
+        })
+        g.addEventListener("mouseout", function() {
+            this.style.color = "violet";
+        })
+    </script>
+</body> -->
+<!-- <body>
+    <form>
+        <input type="radio" name="food" value="pizza" checked>피자
+
+        <input type="radio" name="food" value="steak">스테이크
+
+        <input type="radio" name="food" value="pasta">파스타
+
+        <input type="button" value="확인" onclick="cl()">
+    </form>
+    <script>
+       function cl() {
+        var a = document.getElementsByName("food");
+        for(var b of a) {
+            if(b.checked == true){
+                alert(b.value);
+            }
+        }
+       }
+    </script>
+</body> -->
