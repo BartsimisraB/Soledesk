@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <a href="javascript:a('http://www.naver.com')">네이버</a>
+    <script>
+        function a(url){
+            window.open(url, "me","width=400, height=300")
+        }
+    </script> -->
+
+    <!-- <p id="t"></p>
+    <script>
+        window.onload = function () {
+            setInterval(function () {
+                var n = new Date();
+                var t = n.getHours() + "시" + n.getMinutes() + "분" + n.getSeconds() + "초";
+
+                document.getElementById("t").innerHTML = t;
+            }, 1000)
+        };
+    </script> -->
+
+    <!-- <div id="aa">자바스크립트 넘나 재밌는 것</div>
+    <script>
+        var n = document.getElementById("aa");
+        var m = setInterval("on()",200);    //0.2 초마다 on함수 호출
+
+        function on() {
+            var a = n.innerHTML;
+            var b = a.substr(0,1); //자
+            var c = a.substr(1,a.length-1); //자부터 끝까지 c에 삽입
+
+            a = c + b;
+            n.innerHTML = a;
+        }
+    </script> -->
+
+    <p id="t"></p>
+    <script>
+        window.onload = function () {
+            setInterval(function () {
+                var n = new Date();
+                var m = setTimeout(function () {
+                    document.write(n.toLocaleDateString());
+                }, 0);
+                //년 월 일을 띄우겠다
+                setTimeout(function () {
+                    clearTimeout(m);
+                    document.body.innerHTML = "";}, 1000);
+            }, 1000);
+            //1초 후 타이머 해제
+        }
+    </script>
+</body>
+
+</html>

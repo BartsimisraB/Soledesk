@@ -13,16 +13,29 @@
     function out(){
       p.style.backgroundColor="white";
     }
-
-
   </script>
 </head>
 <body onload="init()">  <!--문서가 완전히 로드 되었을 때 호출-->
   <p id="p">색 변경</p>
-
-  <script>
-
-  </script>
-
 </body>
 </html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    function qq(){
+      var r=confirm("네이버로 이동할거니?");
+      return r;
+    }
+
+    function a(e){
+      e.preventDefault();  //이벤트의 디폴트 행동 강제 취소
+    }
+  </script>
+</head>
+<body>  
+  <a href="http://www.naver.com" onclick="return qq()">네이버로 이동할거니?</a>
+
+  <input type="checkbox" onclick="a(event)">밥
+</body>
+</html> -->
