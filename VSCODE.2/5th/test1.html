@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>5*3</label><input type="text"><br>
+    <label>1+2*3</label><input type="text"><br>
+    <label>12*2</label><input type="text"><br>
+    <button onclick="re()">결과</button><span id="result"></span>
+    <p id="result"></p>
+    <script>
+        // 실제 답과 내가 입력한 답 비교 후 틀리면 취소선
+        // 맞은 답의 개수 출력
+        function re() {
+            var q = document.getElementsByTagName("label");
+            var n = document.getElementsByTagName("input");
+            var cnt = 0;
+
+            for(var i = 0; i < q.length; i++) {
+                if(eval(q[i].innerText) == n[i].value) {
+                    cnt++;
+                }
+                else{
+                    q[i].style.textDecoration = "line-through";
+                }
+            }
+
+            document.getElementById("result").innerHTML = cnt;
+
+        }
+        
+        
+    </script>
+</body>
+
+</html>

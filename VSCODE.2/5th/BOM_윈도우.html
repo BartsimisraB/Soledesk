@@ -43,7 +43,7 @@
         }
     </script> -->
 
-    <p id="t"></p>
+    <!-- <p id="t"></p>
     <script>
         window.onload = function () {
             setInterval(function () {
@@ -57,6 +57,30 @@
                     document.body.innerHTML = "";}, 1000);
             }, 1000);
             //1초 후 타이머 해제
+        }
+    </script> -->
+    <form id="mm">
+
+        비번<input type="password" name="pa" id="p"><br>
+
+        비번확인 <input type="password" name="pp" id="pi"><br>
+
+        <input type="submit" value="제출">
+    </form>
+    <script>
+        window.onload = function() {
+            document.getElementById("mm").onsubmit = function() {
+                var n = document.getElementById("p").value;
+                var m = document.getElementById("pi").value;
+
+                if(n == m) {
+                    alert("성공");
+                }
+                else {
+                    alert("다시 입력");
+                    return false;
+                }
+            }
         }
     </script>
 </body>

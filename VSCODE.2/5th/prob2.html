@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="Body">
+    <!-- 웹 페이지를 접속할 때, 월~수요일이면 배경색을 green,
+         목~금요일이면 blue로 출력해라. 
+         (Date객체의 getDay() 활용, 일요일=0. 월요일=1, …토요일=6이다) -->
+
+
+    <script>
+        var n = document.getElementById("Body");
+        var a = new Date();
+        var b = a.getDay();
+
+        if(b < 4 && b != 0) {
+            n.style.backgroundColor = "green";
+        }
+        else if(b < 7) {
+            n.style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+
+</html>
