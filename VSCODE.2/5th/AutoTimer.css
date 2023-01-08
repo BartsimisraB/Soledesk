@@ -1,0 +1,11 @@
+#wrap {
+    display: block;
+}
+
+label {
+    display: inline-block;
+    text-align: center;
+    width: 90px;
+    margin: 0px 2% 0px;
+    padding: 1%;
+}

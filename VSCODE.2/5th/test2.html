@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body" onload="ch()">
+    <script>
+        function ch(){
+            var da = new Date();
+            var b = da.getUTCDay();
+            var a = document.getElementById("body")
+
+            if (b == 1 || b == 2 || b == 3) {
+                a.style.backgroundColor = "green";
+            }
+            else if (b == 4 || b == 5) {
+                a.style.backgroundColor = "blue";
+            }
+        }
+    </script>
+</body>
+
+</html>
